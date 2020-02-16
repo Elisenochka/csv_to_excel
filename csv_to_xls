@@ -2,12 +2,6 @@ import pandas as pd
 import xlsxwriter 
 from pandas import ExcelWriter
 
-from openpyxl import Workbook, load_workbook
-from openpyxl.drawing.image import Image
-from openpyxl.utils.dataframe import dataframe_to_rows
-
-
-
 fname = r'C:\Users\elili\Documents\SEB\schedule\Week_report_H1_2020.csv'
 
 data = pd.read_csv(fname,sep='\t',encoding='utf-8')
